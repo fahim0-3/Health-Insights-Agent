@@ -4,7 +4,6 @@ from config.app_config import APP_ICON, APP_NAME, APP_TAGLINE, APP_DESCRIPTION
 from utils.validators import validate_signup_fields
 from auth import persistent_session
 import time
-import re
 from html import escape
 
 def show_login_page():

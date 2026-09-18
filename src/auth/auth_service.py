@@ -1,7 +1,6 @@
 import streamlit as st
 from supabase import create_client
 from datetime import datetime
-import time
 import re
 from utils.app_logging import get_logger, log_exception
 from auth import persistent_session

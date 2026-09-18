@@ -3,7 +3,6 @@ from groq import Groq
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
-import os
 from config.prompts import MEDICAL_SAFETY_INSTRUCTIONS
 from utils.app_logging import get_logger, log_exception
 

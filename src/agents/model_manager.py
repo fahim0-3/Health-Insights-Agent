@@ -2,7 +2,6 @@ import groq
 import streamlit as st
 from enum import Enum
 import logging
-import time
 from utils.app_logging import get_logger, log_event, log_exception
 
 logger = get_logger(__name__)
