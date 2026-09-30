@@ -9,10 +9,6 @@ AI Agent to analyze blood reports and provide detailed health insights.
   <a href="#-project-structure">Project Structure</a>
 </p>
 
-<p align="center">
-  <img src="public/health-insights-agent-demo.gif" alt="Health Insights Agent demo">
-</p>
-
 ## 🌟 Features
 
 - **Agent-based architecture**
@@ -104,8 +100,6 @@ Never commit this file. For `SUPABASE_KEY`, use only a Supabase anon or publisha
 5. Set up the Supabase database schema:
 
 The application uses profiles, chat tables, and a persistent per-user analysis quota. For a new Supabase project, run [`public/db/script.sql`](public/db/script.sql). For an existing project, apply [`public/db/migrations/20260914_batch_2_rls.sql`](public/db/migrations/20260914_batch_2_rls.sql), then [`public/db/migrations/20260914_batch_4_persistent_quota.sql`](public/db/migrations/20260914_batch_4_persistent_quota.sql). The migrations link profiles to Supabase Auth, enable row-level security, and stop if they find orphaned profiles. See the [database setup and two-user isolation verification](public/db/README.md) before deploying.
-
-![database schema](public/db/schema.png)
 
 (You can turn off email confirmation on signup in Supabase: **Authentication → Providers → Email → Confirm email**.)
 
